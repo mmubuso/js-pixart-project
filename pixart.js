@@ -14,10 +14,10 @@ setColorButton.addEventListener('click', function(event){
    event.preventDefault()
 })
 
-// Change the color of the small div square to green when clicked on
+// Change the color of the  div square to green when clicked on
 document.body.addEventListener('click',event => {
     if(event.target.classList.value === "square"){
-        event.target.style.backgroundColor = 'green'
+        event.target.style.backgroundColor = git textField.value
     }
 })
 
