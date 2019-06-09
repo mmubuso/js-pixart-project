@@ -7,7 +7,7 @@ const setColorButton = document.getElementById('set-color')
 const textField = document.getElementById('color-field')
 const brushBox = document.getElementsByClassName('brush')[0]
 const resetButton = document.createElement('button')
-
+let squares 
 
 //Event listerners 
 //Changes color of brush box depending on whats typed in
@@ -21,7 +21,13 @@ document.body.addEventListener('mouseover',event => {
         event.target.style.backgroundColor = textField.value
     }
 })
-//Clear color
+//Clicking reset clears current painting 
+resetButton.addEventListener('click',function(){
+    squares = document.querySelectorAll('.square')
+    for(let i = 0; i < squares.length; i++){
+        squares[i].style.backgroundColor = "#E7E5DB"
+    }
+})
 
 
 
